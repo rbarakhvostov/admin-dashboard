@@ -17,7 +17,7 @@ import Dashboard from "./scenes/dashboard";
 // import Geography from "./scenes/geography";
 
 function App() {
-  const [theme, colorMode] = useMode('')
+  const [theme, colorMode] = useMode("");
 
   return (
     <ColorModeContext.Provider value={colorMode}>
