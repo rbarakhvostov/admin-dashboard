@@ -32,11 +32,6 @@ const BarChart = ({ isDashboard = false }) => {
             },
           },
         },
-        legends: {
-          text: {
-            fill: colors.grey[100],
-          },
-        },
         tooltip: {
           container: {
             background: colors.grey[100],
@@ -111,17 +106,9 @@ const BarChart = ({ isDashboard = false }) => {
           itemsSpacing: 2,
           itemWidth: 100,
           itemHeight: 20,
+          itemTextColor: colors.grey[100],
           itemDirection: "left-to-right",
-          itemOpacity: 0.85,
           symbolSize: 20,
-          effects: [
-            {
-              on: "hover",
-              style: {
-                itemOpacity: 1,
-              },
-            },
-          ],
         },
       ]}
       role="application"

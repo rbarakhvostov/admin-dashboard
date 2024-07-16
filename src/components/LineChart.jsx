@@ -32,11 +32,6 @@ const LineChart = ({ isDashboard = false }) => {
             },
           },
         },
-        legends: {
-          text: {
-            fill: colors.grey[100],
-          },
-        },
         tooltip: {
           container: {
             background: colors.grey[100],
@@ -96,19 +91,10 @@ const LineChart = ({ isDashboard = false }) => {
           itemDirection: "left-to-right",
           itemWidth: 80,
           itemHeight: 20,
-          itemOpacity: 0.75,
+          itemTextColor: colors.grey[100],
           symbolSize: 12,
           symbolShape: "circle",
           symbolBorderColor: "rgba(0, 0, 0, .5)",
-          effects: [
-            {
-              on: "hover",
-              style: {
-                itemBackground: "rgba(0, 0, 0, .03)",
-                itemOpacity: 1,
-              },
-            },
-          ],
         },
       ]}
     />

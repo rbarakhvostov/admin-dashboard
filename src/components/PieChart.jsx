@@ -116,17 +116,8 @@ const PieChart = () => {
           itemHeight: 18,
           itemTextColor: colors.grey[100],
           itemDirection: "left-to-right",
-          itemOpacity: 1,
           symbolSize: 18,
           symbolShape: "circle",
-          effects: [
-            {
-              on: "hover",
-              style: {
-                itemTextColor: "#000",
-              },
-            },
-          ],
         },
       ]}
     />
