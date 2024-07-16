@@ -41,7 +41,6 @@ const BarChart = ({ isDashboard = false }) => {
           container: {
             background: colors.grey[100],
             color: colors.grey[900],
-            fontSize: 12,
           },
         },
       }}
