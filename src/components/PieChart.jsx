@@ -11,32 +11,6 @@ const PieChart = () => {
     <ResponsivePie
       data={data}
       theme={{
-        axis: {
-          domain: {
-            line: {
-              stroke: colors.grey[100],
-            },
-          },
-          legend: {
-            text: {
-              fill: colors.grey[100],
-            },
-          },
-          ticks: {
-            line: {
-              stroke: colors.grey[100],
-              strokeWidth: 1,
-            },
-            text: {
-              fill: colors.grey[100],
-            },
-          },
-        },
-        legends: {
-          text: {
-            fill: colors.grey[100],
-          },
-        },
         tooltip: {
           container: {
             background: colors.grey[100],
@@ -59,10 +33,7 @@ const PieChart = () => {
       arcLinkLabelsThickness={2}
       arcLinkLabelsColor={{ from: "color" }}
       arcLabelsSkipAngle={10}
-      arcLabelsTextColor={{
-        from: "color",
-        modifiers: [["darker", 2]],
-      }}
+      arcLabelsTextColor="000000"
       defs={[
         {
           id: "dots",
@@ -122,7 +93,7 @@ const PieChart = () => {
         },
         {
           match: {
-            id: "elixir",
+            id: "css",
           },
           id: "lines",
         },
@@ -143,7 +114,7 @@ const PieChart = () => {
           itemsSpacing: 0,
           itemWidth: 100,
           itemHeight: 18,
-          itemTextColor: "#999",
+          itemTextColor: colors.grey[100],
           itemDirection: "left-to-right",
           itemOpacity: 1,
           symbolSize: 18,

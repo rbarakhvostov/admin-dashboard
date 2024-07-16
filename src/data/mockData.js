@@ -427,21 +427,21 @@ export const mockBarData = [
 
 export const mockPieData = [
   {
-    id: "css",
-    label: "css",
+    id: "javascript",
+    label: "javascript",
     value: 274,
     color: "hsl(2, 70%, 50%)",
   },
   {
-    id: "sass",
-    label: "sass",
-    value: 3,
+    id: "scala",
+    label: "scala",
+    value: 13,
     color: "hsl(235, 70%, 50%)",
   },
   {
     id: "rust",
     label: "rust",
-    value: 450,
+    value: 40,
     color: "hsl(136, 70%, 50%)",
   },
   {
@@ -451,8 +451,8 @@ export const mockPieData = [
     color: "hsl(94, 70%, 50%)",
   },
   {
-    id: "make",
-    label: "make",
+    id: "go",
+    label: "go",
     value: 91,
     color: "hsl(63, 70%, 50%)",
   },
