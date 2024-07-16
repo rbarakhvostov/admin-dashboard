@@ -465,51 +465,51 @@ export const mockLineData = [
     data: [
       {
         x: "plane",
-        y: 101,
+        y: 92,
       },
       {
         x: "helicopter",
-        y: 75,
+        y: 261,
       },
       {
         x: "boat",
-        y: 36,
+        y: 266,
       },
       {
         x: "train",
-        y: 216,
+        y: 298,
       },
       {
         x: "subway",
-        y: 35,
+        y: 164,
       },
       {
         x: "bus",
-        y: 236,
+        y: 40,
       },
       {
         x: "car",
-        y: 88,
+        y: 135,
       },
       {
         x: "moto",
-        y: 232,
+        y: 156,
       },
       {
         x: "bicycle",
-        y: 281,
+        y: 191,
       },
       {
         x: "horse",
-        y: 1,
+        y: 9,
       },
       {
         x: "skateboard",
-        y: 35,
+        y: 160,
       },
       {
         x: "others",
-        y: 14,
+        y: 172,
       },
     ],
   },
@@ -519,51 +519,51 @@ export const mockLineData = [
     data: [
       {
         x: "plane",
-        y: 212,
+        y: 53,
       },
       {
         x: "helicopter",
-        y: 190,
+        y: 77,
       },
       {
         x: "boat",
-        y: 270,
+        y: 16,
       },
       {
         x: "train",
-        y: 9,
+        y: 207,
       },
       {
         x: "subway",
-        y: 75,
+        y: 275,
       },
       {
         x: "bus",
-        y: 175,
+        y: 168,
       },
       {
         x: "car",
-        y: 33,
+        y: 218,
       },
       {
         x: "moto",
-        y: 189,
+        y: 287,
       },
       {
         x: "bicycle",
-        y: 97,
+        y: 108,
       },
       {
         x: "horse",
-        y: 87,
+        y: 68,
       },
       {
         x: "skateboard",
-        y: 299,
+        y: 72,
       },
       {
         x: "others",
-        y: 251,
+        y: 284,
       },
     ],
   },
@@ -573,51 +573,51 @@ export const mockLineData = [
     data: [
       {
         x: "plane",
-        y: 191,
+        y: 21,
       },
       {
         x: "helicopter",
-        y: 136,
+        y: 192,
       },
       {
         x: "boat",
-        y: 91,
+        y: 228,
       },
       {
         x: "train",
-        y: 190,
+        y: 178,
       },
       {
         x: "subway",
-        y: 211,
+        y: 274,
       },
       {
         x: "bus",
-        y: 152,
+        y: 191,
       },
       {
         x: "car",
-        y: 189,
+        y: 29,
       },
       {
         x: "moto",
-        y: 152,
+        y: 55,
       },
       {
         x: "bicycle",
-        y: 8,
+        y: 280,
       },
       {
         x: "horse",
-        y: 197,
+        y: 130,
       },
       {
         x: "skateboard",
-        y: 107,
+        y: 154,
       },
       {
         x: "others",
-        y: 170,
+        y: 65,
       },
     ],
   },
