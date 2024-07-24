@@ -24,11 +24,11 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
 
   return (
     <MenuItem
-      active={selected === title}
+      active={selected === to}
       style={{
         color: colors.grey[100],
       }}
-      onClick={() => setSelected(title)}
+      onClick={() => setSelected(to)}
       icon={icon}
     >
       <Typography>{title}</Typography>
@@ -40,12 +40,17 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
 const Sidebar = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+  const pathname = window.location.pathname;
+
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const [selected, setSelected] = useState("Dashboard");
+  const [selected, setSelected] = useState(pathname);
 
   return (
     <Box
       sx={{
+        "& > .pro-sidebar": {
+          height: "auto",
+        },
         "& .pro-sidebar-inner": {
           background: `${colors.primary[400]} !important`,
         },
@@ -86,6 +91,7 @@ const Sidebar = () => {
                 <IconButton
                   onClick={(e) => {
                     e.stopPropagation();
+
                     setIsCollapsed((prev) => !prev);
                   }}
                 >
@@ -115,7 +121,7 @@ const Sidebar = () => {
                   variant="h2"
                   color={colors.grey[100]}
                   fontWeight="bold"
-                  sx={{ m: "10px 0 0 0" }}
+                  sx={{ m: "10px 0 0" }}
                 >
                   Roman Barakhvostov
                 </Typography>

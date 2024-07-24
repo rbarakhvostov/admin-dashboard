@@ -29,6 +29,10 @@ const Dashboard = () => {
               fontSize: "14px",
               fontWeight: "bold",
               padding: "10px 20px",
+
+              "&:hover": {
+                backgroundColor: colors.blueAccent[500],
+              },
             }}
           >
             <DownloadOutlinedIcon sx={{ mr: "10px" }} />
@@ -54,7 +58,7 @@ const Dashboard = () => {
           <StatBox
             title="12,361"
             subtitle="Emails Sent"
-            progress="0.75"
+            progress={0.75}
             increase="+14%"
             icon={
               <EmailIcon
@@ -73,7 +77,7 @@ const Dashboard = () => {
           <StatBox
             title="431,225"
             subtitle="Sales Obtained"
-            progress="0.50"
+            progress={0.5}
             increase="+21%"
             icon={
               <PointOfSaleIcon
@@ -92,7 +96,7 @@ const Dashboard = () => {
           <StatBox
             title="32,441"
             subtitle="New Clients"
-            progress="0.30"
+            progress={0.3}
             increase="+5%"
             icon={
               <PersonAddIcon
@@ -111,7 +115,7 @@ const Dashboard = () => {
           <StatBox
             title="1,325,134"
             subtitle="Traffic Received"
-            progress="0.80"
+            progress={0.8}
             increase="+43%"
             icon={
               <TrafficIcon
@@ -180,9 +184,9 @@ const Dashboard = () => {
               Recent Transactions
             </Typography>
           </Box>
-          {mockTransactions.map((transaction, i) => (
+          {mockTransactions.map((transaction) => (
             <Box
-              key={`${transaction.txId}-${i}`}
+              key={transaction.txId}
               display="flex"
               justifyContent="space-between"
               alignItems="center"
@@ -229,7 +233,7 @@ const Dashboard = () => {
             alignItems="center"
             mt="25px"
           >
-            <ProgressCircle size="125" />
+            <ProgressCircle size="125" progress={0.75} />
             <Typography
               variant="h5"
               color={colors.greenAccent[500]}
